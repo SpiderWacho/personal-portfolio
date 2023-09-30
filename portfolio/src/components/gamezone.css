@@ -1,0 +1,84 @@
+.gamezone-content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('../img/seamless3.jpg');
+    background-size: 65%;
+
+}
+
+.gamezone-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+}
+
+
+
+.game-container {
+    height: 60%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(8.600000381469727px);
+}
+
+.game {
+    width: 75%;
+    height: 100%;
+}
+
+
+
+.game-description-container {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.game-title {
+    width: 100%;
+}
+
+.project-selector {
+    width: 70%;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 25px;
+    box-shadow: 0px 5px 5px .3px rgba(0, 0, 0, 0.329);
+}
+
+.preview-container {
+    height: 100%;
+    width: 20%;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    border: 2px solid black;
+}
+
+.preview-container:hover {
+    transform: scale(1.1);
+}
+
+.preview-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover ;
+}
+
