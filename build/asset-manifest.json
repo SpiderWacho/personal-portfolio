@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6fc17f0e.css",
+    "main.js": "/static/js/main.8502f2ad.js",
+    "static/media/crud-preview.png": "/static/media/crud-preview.16bc4ade359f83470a66.png",
+    "static/media/rockpaperscissors.png": "/static/media/rockpaperscissors.93c89cf3e10ded93661a.png",
+    "static/media/cart-preview.png": "/static/media/cart-preview.d5f5eb196dca4200bd12.png",
+    "static/media/memorygame.png": "/static/media/memorygame.1a70418e866f8f6e13a2.png",
+    "static/media/seamless3.jpg": "/static/media/seamless3.289c7e388370e704d6b3.jpg",
+    "static/media/cv-preview.png": "/static/media/cv-preview.88ba8b04bde2fac5d620.png",
+    "static/media/battleship.png": "/static/media/battleship.459a393d001e299e0ce0.png",
+    "static/media/sketch.png": "/static/media/sketch.a3a08b95fdd7ca70da12.png",
+    "static/media/sun.png": "/static/media/sun.6afaa4b6777b0b63bd10.png",
+    "static/media/project.png": "/static/media/project.e0da2530164713549545.png",
+    "static/media/cart-icon.png": "/static/media/cart-icon.0edb59010b1db3cbc904.png",
+    "static/media/contact.png": "/static/media/contact.68efd4a66a666d00ff0e.png",
+    "static/media/joystick.png": "/static/media/joystick.503779cf3090f04ed6a3.png",
+    "static/media/crud-icon.png": "/static/media/crud-icon.9f5e82c5d4f590dca12b.png",
+    "static/media/tictactoe.png": "/static/media/tictactoe.b6feca52900a1e50e172.png",
+    "static/media/profile.jpeg": "/static/media/profile.32bc9e057040c86387fe.jpeg",
+    "index.html": "/index.html",
+    "main.6fc17f0e.css.map": "/static/css/main.6fc17f0e.css.map",
+    "main.8502f2ad.js.map": "/static/js/main.8502f2ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc17f0e.css",
+    "static/js/main.8502f2ad.js"
+  ]
+}
