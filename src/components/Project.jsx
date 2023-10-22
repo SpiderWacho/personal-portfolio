@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,14 +12,19 @@ function Project({image, title, description, preview, inverted, aos, redirectPre
     AOS.init();
   }, []);
 
+
   const redirect = (url) => {
     window.open(url, "_blank");
   }
+
+
+
+
   
   let {language, setLanguage} = useLanguageContext();
 
     return (
-            <div className='project' data-aos={aos} data-aos-duration="1000">
+            <div className='project' id="project" data-aos={aos} data-aos-duration="1000">
               <div className={'project-left ' + (inverted === true ? "inverted ": "" )}>
                 <div className='project-image-container'>
                     <img className='project-image'src={image}></img>
@@ -38,7 +43,7 @@ function Project({image, title, description, preview, inverted, aos, redirectPre
                 <div className='project-description'>
                   <h2 className='project-subtitle'>{title}</h2>
                   <p>{description}</p>
-                  <img className="project-preview" src={preview}></img>
+                  <img className="project-preview"  src={preview}></img>
                 </div>  
               </div>
             </div>

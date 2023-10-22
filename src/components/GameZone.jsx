@@ -11,7 +11,7 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { useLanguageContext } from '../context/LanguageContext';
 
-import Header from './Header';
+import Layout from './Layout'
 
 function GameZone() {
   let {language, setLanguage} = useLanguageContext();
@@ -59,7 +59,7 @@ function GameZone() {
         setTitle(`${language === 'english' ? 'MEMORY GAME' : 'JUEGO DE MEMORIA'}`)
         setDescription(`${language === 'english' ? `This project was my first approach to React.js,
          using functional and class components, state and the useEffect hook.`
-          : `ESte proyecto fue mi primer acercamiento a React.Js, use componentes de clase y funcionales para aprender las diferencias entre ellos.
+          : `Este proyecto fue mi primer acercamiento a React.Js, use componentes de clase y funcionales para aprender las diferencias entre ellos.
           Aprendi conceptos como estado, props, y hooks como useEffect.`}`)
         break;
       case 'sketch':
@@ -84,7 +84,7 @@ function GameZone() {
   
     return ( 
       <>
-      <Header goToPortfolio={() => goToPortfolio()} goToContact={() => goToContact()} goToHome={() => goToHome()}/>
+      <Layout>
       <div className="gamezone-content">
 
             <h2 className='gamezone-title'>{language === 'english' ? 'Play Ground' : 'Zona de Juegos'}</h2>
@@ -114,6 +114,7 @@ function GameZone() {
             </div>
           </div>
       </div>
+      </Layout>
       </>
     );
   }

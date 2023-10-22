@@ -1,8 +1,9 @@
 .gamezone-content {
-    height: 100vh;
     width: 100vw;
+    height: calc(100vh - 76px - 50px);
     display: flex;
     flex-wrap: wrap;
+
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -22,36 +23,39 @@
 
 
 .game-container {
-    height: 60%;
-    width: 70%;
+    width: 80%;
+    height: 800px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.10);
     background: rgba(255, 255, 255, 0.49);
     backdrop-filter: blur(8.600000381469727px);
+    font-family: 'Righteous', cursive;
 }
 
 .game {
-    width: 75%;
-    height: 100%;
+    width: 100%;
+    height: 600px;
 }
 
 
 
 .game-description-container {
-    height: 50%;
-    width: 30%;
+    min-height: 200px;
+    height: 20%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 0px 15px;
 }
 
-.game-title {
-    width: 100%;
-}
+
+
 
 .project-selector {
     width: 70%;
@@ -62,6 +66,7 @@
     align-items: center ;
     margin-top: 25px;
     box-shadow: 0px 5px 5px .3px rgba(0, 0, 0, 0.329);
+    margin-bottom: 50px;
 }
 
 .preview-container {
@@ -80,5 +85,25 @@
     height: 100%;
     width: 100%;
     object-fit: cover ;
+}
+
+@media (min-width: 850px) {
+    .game-container {
+
+        flex-direction: row;
+
+    }
+
+    .game {
+        width: 70%;
+        height: 100%;
+    }
+
+    .game-description-container {
+
+        height: 100%;
+        width: 30%;
+
+    }
 }
 

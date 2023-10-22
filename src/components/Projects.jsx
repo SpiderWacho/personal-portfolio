@@ -34,19 +34,6 @@ const Projects = forwardRef( function Projects(props, ref) {
             "redirectCode" : `https://github.com/SpiderWacho/inventory-application`
           },
         {
-          "image" : cvIcon,
-          "title" : `${language === 'english' ? 'CV CREATOR' : 'CREADOR DE CV'}`,
-          "description" : `${language === 'english' ? `The objective of this project was to use React to make something useful.
-          Here you can complete the fields of the form and it will updating the cv template,
-           then you can dowload it.` : `El objetivo de este proyecto fue usar React para armar algo util. En el proyecto completas los compas del formulario y va a completarlos en la plantilla de CV`}`
-            ,
-            "preview" : cvPreview,
-            "inverted" : true,
-            "aos" : "fade-right",
-            "redirectPreview" : 'https://spiderwacho.github.io/create-cv/',
-            "redirectCode" : `https://github.com/SpiderWacho/create-cv`
-        },
-        {
         "image" : cartIcon,
         "title" : `${language === 'english' ? 'SHOPPING PAGE' : 'PAGINA DE COMPRAS'}`,
         "description" : `${language === 'english' ? `The objective of this project was to apply the things that i learned
@@ -60,28 +47,38 @@ const Projects = forwardRef( function Projects(props, ref) {
           "aos" : "fade-left",
           "redirectPreview" : 'https://spiderwacho.github.io/shopping-cart/',
           "redirectCode" : `https://github.com/SpiderWacho/shopping-cart`
+        },
+        {
+          "image" : cvIcon,
+          "title" : `${language === 'english' ? 'CV CREATOR' : 'CREADOR DE CV'}`,
+          "description" : `${language === 'english' ? `The objective of this project was to use React to make something useful.
+          Here you can complete the fields of the form and it will updating the cv template,
+           then you can dowload it.` : `El objetivo de este proyecto fue usar React para armar algo util. En el proyecto completas los compas del formulario y va a completarlos en la plantilla de CV`}`
+            ,
+            "preview" : cvPreview,
+            "inverted" : true,
+            "aos" : "fade-right",
+            "redirectPreview" : 'https://spiderwacho.github.io/create-cv/',
+            "redirectCode" : `https://github.com/SpiderWacho/create-cv`
         }]
 
   return (
-    <div className="projects-content" id="projects" ref={ref}> 
+    <div className='projects-content-container'>
+      <div className="projects-content" id="projects" ref={ref}> 
 
-          <h2 className='title projects-title'>{language==='english' ? 'PROJECTS' : 'PROYECTOS'}</h2>
+            <h2 className='title projects-title'>{language==='english' ? 'PROJECTS' : 'PROYECTOS'}</h2>
 
-          {projectsObj.map((project, index) => {
-            return (
-              <Project image={project.image} title={project.title}
-              description={project.description} preview={project.preview}
-              inverted={project.inverted} aos={project.aos} 
-              redirectPreview={project.redirectPreview} 
-              redirectCode={project.redirectCode} key={index}
-              />
-            )
-          })}
-
-
-
-
-          
+            {projectsObj.map((project, index) => {
+              return (
+                <Project image={project.image} title={project.title}
+                description={project.description} preview={project.preview}
+                inverted={project.inverted} aos={project.aos} 
+                redirectPreview={project.redirectPreview} 
+                redirectCode={project.redirectCode} key={index}
+                />
+              )
+            })}            
+      </div>
     </div>
   );
 }) 

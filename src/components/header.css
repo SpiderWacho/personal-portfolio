@@ -1,7 +1,7 @@
 
 
 .header{
-    height: 75px;
+    height: 100%;
     background-color: hsl(0, 0%, 8%);
     display: flex;
     justify-content: space-between;
@@ -11,6 +11,22 @@
     position: sticky;
     bottom: 0;
     padding: 4px 20px 0;
+}
+
+
+.header-footer {
+    height: 75px;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+
+
+
 }
 
 .navbar {
@@ -32,12 +48,13 @@
     flex-direction: row;
     align-items: center;
     height: 100%;
-    gap: 25px;
-    margin-right: 35px;
+    gap: 15px;
+
 }
 
 .logo-container {
     display: none;
+
 }
 
 .link-container {
@@ -165,11 +182,24 @@ a, a:visited, a:hover, a:active {
     color: rgb(187, 187, 187);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 600px) {
+
+    .header-container {
+        position: relative;
+        top: 0;
+        height: 76px;
+        width: 100%;
+        padding: 4px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(0, 0%, 8%);
+        z-index: 5;
+    }
+
 
 .header{
     position: relative;
-    height: 75px;
     background-color: hsl(0, 0%, 8%);
     display: flex;
     justify-content: space-between;
@@ -179,6 +209,7 @@ a, a:visited, a:hover, a:active {
     position: sticky;
     top: 0;
     padding: 4px 20px 0;
+    max-width: var(--max-width);
 }
 
 .navbar {
@@ -201,18 +232,23 @@ a, a:visited, a:hover, a:active {
     align-items: center;
     height: 100%;
     gap: 25px;
-    margin-right: 35px;
+
 }
 
 
 .logo-container {
     height: 100%;
     width: 75px;
-    margin-left: -20px;
+    margin-left: -15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.logo, #contact {
+    opacity: .8;
+}
+
 
 .link-container {
     display: flex;
@@ -238,18 +274,7 @@ a, a:visited, a:hover, a:active {
     filter: invert();
 }
 
-.night {
-    height: 25px;
-    width: 25px;
-    filter: invert();
-}
 
-.sun {
-    height: 25px;
-    width: 25px;
-    filter: invert();
-    margin-left: 15px;
-}
 
 .dropdown{
     font-family: 'Bricolage Grotesque', sans-serif;
