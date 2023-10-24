@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.3d172c24.css",
-    "main.js": "/personal-portfolio/static/js/main.93bbebe2.js",
-    "static/media/crud-preview.png": "/personal-portfolio/static/media/crud-preview.16bc4ade359f83470a66.png",
-    "static/media/rockpaperscissors.png": "/personal-portfolio/static/media/rockpaperscissors.93c89cf3e10ded93661a.png",
-    "static/media/cart-preview.png": "/personal-portfolio/static/media/cart-preview.d5f5eb196dca4200bd12.png",
-    "static/media/memorygame.png": "/personal-portfolio/static/media/memorygame.1a70418e866f8f6e13a2.png",
-    "static/media/seamless3.jpg": "/personal-portfolio/static/media/seamless3.289c7e388370e704d6b3.jpg",
-    "static/media/cv-preview.png": "/personal-portfolio/static/media/cv-preview.88ba8b04bde2fac5d620.png",
-    "static/media/battleship.png": "/personal-portfolio/static/media/battleship.459a393d001e299e0ce0.png",
-    "static/media/sketch.png": "/personal-portfolio/static/media/sketch.a3a08b95fdd7ca70da12.png",
-    "static/media/project.png": "/personal-portfolio/static/media/project.e0da2530164713549545.png",
-    "static/media/cart-icon.png": "/personal-portfolio/static/media/cart-icon.0edb59010b1db3cbc904.png",
-    "static/media/contact.png": "/personal-portfolio/static/media/contact.68efd4a66a666d00ff0e.png",
-    "static/media/joystick.png": "/personal-portfolio/static/media/joystick.503779cf3090f04ed6a3.png",
-    "static/media/crud-icon.png": "/personal-portfolio/static/media/crud-icon.9f5e82c5d4f590dca12b.png",
-    "static/media/tictactoe.png": "/personal-portfolio/static/media/tictactoe.b6feca52900a1e50e172.png",
-    "static/media/profile.jpeg": "/personal-portfolio/static/media/profile.32bc9e057040c86387fe.jpeg",
-    "static/media/linkedin.png": "/personal-portfolio/static/media/linkedin.cabb3cbaf3529dc02ecc.png",
-    "index.html": "/personal-portfolio/index.html",
-    "main.3d172c24.css.map": "/personal-portfolio/static/css/main.3d172c24.css.map",
-    "main.93bbebe2.js.map": "/personal-portfolio/static/js/main.93bbebe2.js.map"
+    "main.css": "/portfolio/static/css/main.3182977d.css",
+    "main.js": "/portfolio/static/js/main.f6d59e0b.js",
+    "static/media/crud-preview.png": "/portfolio/static/media/crud-preview.16bc4ade359f83470a66.png",
+    "static/media/rockpaperscissors.png": "/portfolio/static/media/rockpaperscissors.93c89cf3e10ded93661a.png",
+    "static/media/cart-preview.png": "/portfolio/static/media/cart-preview.d5f5eb196dca4200bd12.png",
+    "static/media/memorygame.png": "/portfolio/static/media/memorygame.1a70418e866f8f6e13a2.png",
+    "static/media/seamless3.jpg": "/portfolio/static/media/seamless3.289c7e388370e704d6b3.jpg",
+    "static/media/cv-preview.png": "/portfolio/static/media/cv-preview.88ba8b04bde2fac5d620.png",
+    "static/media/battleship.png": "/portfolio/static/media/battleship.459a393d001e299e0ce0.png",
+    "static/media/sketch.png": "/portfolio/static/media/sketch.a3a08b95fdd7ca70da12.png",
+    "static/media/project.png": "/portfolio/static/media/project.e0da2530164713549545.png",
+    "static/media/cart-icon.png": "/portfolio/static/media/cart-icon.0edb59010b1db3cbc904.png",
+    "static/media/contact.png": "/portfolio/static/media/contact.68efd4a66a666d00ff0e.png",
+    "static/media/joystick.png": "/portfolio/static/media/joystick.503779cf3090f04ed6a3.png",
+    "static/media/crud-icon.png": "/portfolio/static/media/crud-icon.9f5e82c5d4f590dca12b.png",
+    "static/media/tictactoe.png": "/portfolio/static/media/tictactoe.b6feca52900a1e50e172.png",
+    "static/media/profile.jpeg": "/portfolio/static/media/profile.32bc9e057040c86387fe.jpeg",
+    "static/media/linkedin.png": "/portfolio/static/media/linkedin.cabb3cbaf3529dc02ecc.png",
+    "index.html": "/portfolio/index.html",
+    "main.3182977d.css.map": "/portfolio/static/css/main.3182977d.css.map",
+    "main.f6d59e0b.js.map": "/portfolio/static/js/main.f6d59e0b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d172c24.css",
-    "static/js/main.93bbebe2.js"
+    "static/css/main.3182977d.css",
+    "static/js/main.f6d59e0b.js"
   ]
 }
