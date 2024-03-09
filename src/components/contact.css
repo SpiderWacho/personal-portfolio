@@ -1,209 +1,185 @@
 .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 11%);
+  padding-bottom: 50px;
+}
+
+.contact-curve {
+  z-index: 0;
+  transform: scaleX(1.5);
+}
+
+.contact-title {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+
+.contact-card {
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  font-family: 'Oswald';
+}
+
+.contact-card > .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 25px;
+}
+
+.contact-logo-container {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.contact-logo {
+  position: relative;
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+  transition: all ease-in-out 0.6s;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  filter: invert();
+  opacity: 0.9;
+  z-index: 1;
+}
+
+#github {
+  padding: 5px;
+}
+
+.contact-logo-container:hover > .contact-logo {
+  top: -10px;
+  left: -35px;
+  transform: scale(1.2);
+}
+
+.contact-logo-container:hover > .contact-text {
+  left: 40px;
+  opacity: 0;
+}
+
+.contact-text {
+  position: relative;
+  left: 0;
+  font-size: 1.5rem;
+  color: rgb(230, 230, 230);
+  transition: all ease-in-out 0.4s;
+  z-index: 0;
+}
+
+@media (min-width: 1025px) {
+  .contact-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: hsl(0, 0%, 11%);
     padding-bottom: 50px;
-}
+  }
 
-
-
-.contact-curve {
+  .contact-curve {
     z-index: 0;
     transform: scaleX(1.5);
-}
+  }
 
-
-
-.contact-title {
+  .contact-title {
     font-size: 4rem;
     width: 100%;
     text-align: center;
     font-family: 'Righteous', cursive;
     z-index: 1;
     color: rgb(255, 255, 255);
-}
+  }
 
-.contact-card{
+  .contact-card {
     width: 500px;
     height: 300px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    
     flex-wrap: wrap;
     cursor: pointer;
-    transition: all ease-in-out .4s;
+    transition: all ease-in-out 0.4s;
     font-family: 'Oswald';
-}
+  }
 
-.contact-card > .img-container {
+  .contact-card > .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
     gap: 25px;
-}
+  }
 
-.contact-logo-container {
+  .contact-logo-container {
     display: flex;
     width: 200px;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;    
+    flex-wrap: nowrap;
+  }
 
-
-}
-
-.contact-logo {
+  .contact-logo {
     position: relative;
     height: 75px;
     width: 75px;
     object-fit: contain;
-    transition: all ease-in-out .6s;
+    transition: all ease-in-out 0.6s;
     top: 0;
     left: 0;
     margin-left: 10px;
     filter: invert();
-    opacity: .9;
+    opacity: 0.9;
     z-index: 1;
-    
-}
+  }
 
-#github {
+  #github {
     padding: 5px;
-}
+  }
 
-
-
-
-
-.contact-logo-container:hover > .contact-logo {
+  .contact-logo-container:hover > .contact-logo {
     top: -10px;
-    left: -35PX;
+    left: -35px;
     transform: scale(1.2);
+  }
 
-}
-
-.contact-logo-container:hover > .contact-text {
+  .contact-logo-container:hover > .contact-text {
     left: 40px;
     opacity: 0;
-}
+  }
 
-.contact-text {
+  .contact-text {
     position: relative;
     left: 0;
     font-size: 1.5rem;
     color: rgb(230, 230, 230);
-    transition: all ease-in-out .4s;
+    transition: all ease-in-out 0.4s;
     z-index: 0;
+  }
 }
-
-@media (min-width: 1025px)  {
-    .contact-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        background-color: hsl(0, 0%, 11%);
-        padding-bottom: 50px;
-    }
-    
-    
-    
-    .contact-curve {
-        z-index: 0;
-        transform: scaleX(1.5);
-    }
-    
-    
-    
-    .contact-title {
-        font-size: 4rem;
-        width: 100%;
-        text-align: center;
-        font-family: 'Righteous', cursive;
-        z-index: 1;
-        color: rgb(255, 255, 255);
-    }
-    
-    .contact-card{
-        width: 500px;
-        height: 300px;
-    
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        cursor: pointer;
-        transition: all ease-in-out .4s;
-        font-family: 'Oswald';
-    }
-    
-    .contact-card > .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        gap: 25px;
-    }
-    
-    .contact-logo-container {
-        display: flex;
-        width: 200px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;    
-    
-    
-    }
-    
-    .contact-logo {
-        position: relative;
-        height: 75px;
-        width: 75px;
-        object-fit: contain;
-        transition: all ease-in-out .6s;
-        top: 0;
-        left: 0;
-        margin-left: 10px;
-        filter: invert();
-        opacity: .9;
-        z-index: 1;
-        
-    }
-    
-    #github {
-        padding: 5px;
-    }
-    
-    
-    
-    
-    
-    .contact-logo-container:hover > .contact-logo {
-        top: -10px;
-        left: -35PX;
-        transform: scale(1.2);
-    
-    }
-    
-    .contact-logo-container:hover > .contact-text {
-        left: 40px;
-        opacity: 0;
-    }
-    
-    .contact-text {
-        position: relative;
-        left: 0;
-        font-size: 1.5rem;
-        color: rgb(230, 230, 230);
-        transition: all ease-in-out .4s;
-        z-index: 0;
-    }
- }

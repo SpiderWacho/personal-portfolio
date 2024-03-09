@@ -12,7 +12,9 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -33,32 +35,45 @@ body {
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 .homepage {
   height: calc(100vh - 75px);
-
 }
 
 .content {
@@ -84,8 +99,6 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-
-
 .curve {
   position: absolute;
   bottom: -5px;
@@ -95,13 +108,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100px;
   width: 386.67px;
   width: 100%;
-
-
 }
-
-
-
-
 
 .title {
   font-size: 2.2rem;
@@ -116,13 +123,9 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 1.8rem;
   color: rgb(238, 238, 238);
-  margin-top: -10PX;
+  margin-top: -10px;
   font-family: 'Righteous', cursive;
-
-
-
 }
-
 
 .profile-container {
   width: 80%;
@@ -132,7 +135,6 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
   position: relative;
   margin-top: -150px;
-
 }
 
 .profile {
@@ -140,7 +142,6 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 150px;
   border-radius: 50%;
   border: 5px solid black;
-  
 }
 
 .profile-button {
@@ -152,16 +153,14 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
   border-radius: 7px;
   background-color: transparent;
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out 0.5s;
   z-index: 10;
 }
-
 
 .profile-button:hover {
   background-color: rgba(0, 0, 0, 0.692);
   color: white;
 }
-
 
 .button-container {
   display: flex;
@@ -179,14 +178,11 @@ p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: .7rem;
+  font-size: 0.7rem;
   color: #252525;
   font-family: 'Oswald', sans-serif;
   background-color: hsl(0, 0%, 8%);
 }
-
-
-
 
 .front {
   display: flex;
@@ -195,7 +191,7 @@ p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-.atropos-inner  {
+.atropos-inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,12 +205,12 @@ p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: #f3f4f570;
   backdrop-filter: blur(1.200000381469727px);
   cursor: pointer;
   border-radius: 10px;
-  transition: all ease-in-out .4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .back {
@@ -225,7 +221,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.description-info  {
+.description-info {
   font-family: 'Righteous', cursive;
   display: flex;
   justify-content: center;
@@ -240,7 +236,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .description-p {
-   text-align: left;
+  text-align: left;
 }
 
 .description-profile {
@@ -258,17 +254,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .title-back {
   font-family: 'Righteous', cursive;
-  color: white;
 }
+
 .homepage {
   height: calc(100vh - 75px);
 }
 
-
-
-@media (min-width: 1025px)  {
-
-
+.a-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1025px) {
   .content {
     width: 100%;
     height: 100%;
@@ -278,7 +275,7 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     position: relative;
   }
-  
+
   .background {
     position: absolute;
     z-index: 0;
@@ -291,18 +288,14 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     flex-wrap: wrap;
   }
-  
-  
-  
 
-  
   .title {
     font-size: 4rem;
     width: 100%;
     text-align: center;
     font-family: 'Righteous', cursive;
   }
-  
+
   .subtitle {
     width: 100%;
     text-align: center;
@@ -310,12 +303,8 @@ p, h1, h2, h3, h4, h5, h6 {
     color: rgb(238, 238, 238);
     margin-top: -25px;
     font-family: 'Righteous', cursive;
-  
-  
-  
   }
-  
-  
+
   .profile-container {
     width: 80%;
     display: flex;
@@ -324,17 +313,17 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     position: relative;
     margin-top: -75px;
-  
   }
-  
+
   .profile {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     border: 5px solid black;
-    
   }
-  
+
+
+
   .profile-button {
     position: relative;
     font-family: 'Oswald', sans-serif;
@@ -344,17 +333,18 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
     border-radius: 7px;
     background-color: transparent;
-    transition: all ease-in-out .5s;
+    transition: all ease-in-out 0.5s;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  
+
   .profile-button:hover {
     background-color: rgba(0, 0, 0, 0.692);
     color: white;
   }
-  
-  
+
   .button-container {
     display: flex;
     justify-content: center;
@@ -363,8 +353,6 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-top: 25px;
   }
-  
-  
 
   .front {
     display: flex;
@@ -372,7 +360,7 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
   }
-  
+
   .profile-content {
     width: 1000px;
     height: 500px;
@@ -381,14 +369,14 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background: #f3f4f570;
     backdrop-filter: blur(1.200000381469727px);
     cursor: pointer;
     border-radius: 10px;
-    transition: all ease-in-out .4s;
+    transition: all ease-in-out 0.4s;
   }
-  
+
   .back {
     display: flex;
     justify-content: center;
@@ -403,7 +391,7 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     flex-direction: column;
     padding-left: 15px;
     font-family: 'Righteous', cursive;
@@ -414,12 +402,10 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
-    
   }
 
- 
   .profile-back {
     height: 150px;
     width: 150px;
@@ -434,6 +420,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .footer {
+    /* MARGIN -1 FOR FIX BORDER */
     height: 52px;
     width: 100%;
     background-color: hsl(0, 0%, 5%);
@@ -441,8 +428,10 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     color: rgb(39, 39, 39);
-    font-size: .7rem;
+    font-size: 0.7rem;
     font-family: 'Righteous', cursive;
     margin-top: -1px;
   }
+
+  
 }

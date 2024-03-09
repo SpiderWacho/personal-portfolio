@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://SpiderWacho.github.io/portfolio",
+  "homepage": "https://spiderwacho.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +11,7 @@
     "atropos": "^2.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^7.5.1",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -21,7 +22,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,11 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "gh-pages": "^6.0.0",
+    "prettier": "^3.0.3"
   }
 }
