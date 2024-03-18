@@ -19,7 +19,6 @@ function HomePage() {
   //Context provider modo oscuro y claro
   //Ingles espanol
   const [front, setFront] = useState(true);
-  const [btnHover, setBtnHover] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,21 +37,11 @@ function HomePage() {
     }
   }, [scrolled, state]);
 
-  const isHover = () => {
-    if (btnHover) {
-      setBtnHover(false);
-    } else {
-      setBtnHover(true);
-    }
-  };
-
   const changeSide = () => {
-    if (!btnHover) {
-      if (front) {
-        setFront(false);
-      } else {
-        setFront(true);
-      }
+    if (front) {
+      setFront(false);
+    } else {
+      setFront(true);
     }
   };
   /* 
@@ -99,21 +88,15 @@ function HomePage() {
                   <div className="atropos-scale">
                     <div className="atropos-rotate">
                       <div className="atropos-inner">
-                        <div className="profile-content" onClick={(e) => changeSide(e)}>
+                        <div className="profile-content">
                           {front === true && (
                             <div className="front">
                               <img className="profile" src={avatar} alt="myself"></img>
                               <h1 className="title name"> GASTON VECCHIO</h1>
                               <h2 className="subtitle lastname">
-                                {' '}
                                 {language === 'spanish' ? 'DESAROLLADOR WEB' : 'WEB DEVELOPER'}
                               </h2>
-                              <div
-                                className="button-container"
-                                onMouseEnter={() => isHover()}
-                                onMouseLeave={() => {
-                                  isHover();
-                                }}>
+                              <div className="button-container">
                                 <a
                                   href="/portfolio/gastonVecchio-cv.pdf"
                                   download
@@ -124,15 +107,16 @@ function HomePage() {
                                 <button
                                   className="profile-button"
                                   type="button"
-                                  onMouseEnter={() => isHover()}
-                                  onMouseLeave={() => {
-                                    isHover();
-                                  }}
                                   onClick={() => {
                                     redirect('mailto:gastonvecch@gmail.com');
                                   }}>
                                   {language === 'english' ? 'Mail' : 'Correo'}
                                 </button>
+                              </div>
+                              <div className="corner-flip" onClick={(e) => changeSide(e)}>
+                                <p className="corner-text">
+                                  {language === 'spanish' ? 'Sobre mi' : 'About me'}
+                                </p>
                               </div>
                             </div>
                           )}
@@ -142,17 +126,25 @@ function HomePage() {
                                 <h2 className="description-subtitle">About me</h2>
                                 <p className="description-p">Hi there!</p>
                                 <p className="description-p">
-                                  I am 25 years old programmer, most of my knowledge is self
-                                  learned.
-                                </p>
-                                <p className="description-p">
-                                  I completed the CS50: Introduction to computer Science and
-                                  currently I am working throguht the Odin Project.
+                                  {language === 'spanish'
+                                    ? `Soy un programador que se ha formado en gran medida de forma autodidacta.
+                                     Completé el curso "CS50: Introduction to computer science" y actualmente
+                                      estoy trabajando en  "The Odin Project" para seguir aprendiendo y mejorando mis habilidades.`
+                                    : `
+                                  As a self-motivated learner, I've developed my programming skills
+                                  through independent study. I've completed CS50's Introduction to
+                                  Computer Science and am currently working through The Odin Project
+                                  to further enhance my knowledge base.`}
                                 </p>
                               </div>
                               <div className="description-profile">
                                 <img className="profile-back" src={avatar} alt="myself"></img>
                                 <h1 className="title-back"> GASTON VECCHIO</h1>
+                              </div>
+                              <div className="corner-flip" onClick={(e) => changeSide(e)}>
+                                <p className="corner-text">
+                                  {language === 'spanish' ? 'Contacto' : 'Contact'}
+                                </p>
                               </div>
                             </div>
                           )}

@@ -24,9 +24,8 @@ const Projects = forwardRef(function Projects(props, ref) {
       title: `${language === 'english' ? 'GAME STORE CRUD' : 'CRUD TIENDA DE JUEGOS'}`,
       description: `${
         language === 'english'
-          ? `The objective of this project was to put in practice all the things
-          that i learned about Node.js and Express applications. I also used MongoDB and the MVC model.`
-          : `El objetivo de este proyecto era poner en practica todas las cosas que aprendi sobre Node.js y aplicaciones Express. Tambien use MongoDB para la base de datos, EJS y el modelo MVC.`
+          ? `This project aimed to apply my knowledge of Node.js, Express.js, MongoDB, and the MVC architecture.`
+          : `El objetivo de este proyecto era aplicar todos los conocimientos adquiridos sobre Node.js y aplicaciones Express. Utilice MongoDB como base de datos y el modelo MVC para la organización del código. También utilice plantillas EJS para la interfaz del usuario.`
       }`,
       preview: crudPreview,
       inverted: false,
@@ -39,14 +38,12 @@ const Projects = forwardRef(function Projects(props, ref) {
       title: `${language === 'english' ? 'SHOPPING PAGE' : 'PAGINA DE COMPRAS'}`,
       description: `${
         language === 'english'
-          ? `The objective of this project was to apply the things that i learned
-          about my first aproximation to the React Framework. I learned the differences between
-           functional and class components, the use of states and props.`
-          : `El objetivo de este proyecto fue usar todas las cosas que aprendi sobre React en un primer acercamiento,
-            aprendi cosas como diferencia entre componentes basados en clases y funcionales, hooks como useEffect y ContextManager`
+          ? `In this project, I solidified my understanding of React by building upon my initial exposure to the framework. 
+          I practiced creating functional and class components, utilizing state management, and effectively passing props.`
+          : `El objetivo de este proyecto era aplicar los conocimientos adquiridos sobre React en un primer acercamiento. Se implementaron componentes tanto basados en clases como funcionales, y se utilizaron hooks como useEffect y ContextManager para la gestión del estado y la comunicación entre componentes.          `
       }`,
       preview: cartPreview,
-      inverted: false,
+      inverted: true,
       aos: 'fade-right',
       redirectPreview: 'https://spiderwacho.github.io/shopping-cart/',
       redirectCode: `https://github.com/SpiderWacho/shopping-cart`
@@ -56,13 +53,13 @@ const Projects = forwardRef(function Projects(props, ref) {
       title: `${language === 'english' ? 'CV CREATOR' : 'CREADOR DE CV'}`,
       description: `${
         language === 'english'
-          ? `The objective of this project was to use React to make something useful.
-          Here you can complete the fields of the form and it will updating the cv template,
-           then you can dowload it.`
-          : `El objetivo de este proyecto fue usar React para armar algo util. En el proyecto completas los compas del formulario y va a completarlos en la plantilla de CV`
+          ? `This React application allows users to create and customize their CV by filling out a form. 
+          The application dynamically updates the CV template, enabling users to download a personalized CV upon completion.
+          `
+          : `Esta aplicación React permite a los usuarios crear y personalizar su CV completando un formulario. La aplicación actualiza dinámicamente la plantilla del CV, permitiendo a los usuarios descargar un CV personalizado al finalizar.`
       }`,
       preview: cvPreview,
-      inverted: true,
+      inverted: false,
       aos: 'fade-left',
       redirectPreview: 'https://spiderwacho.github.io/create-cv/',
       redirectCode: `https://github.com/SpiderWacho/create-cv`
